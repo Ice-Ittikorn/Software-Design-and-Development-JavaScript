@@ -116,12 +116,19 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
 </html>
 ```
 [รูปผลการทดลองที่ 1]
+
 <img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 39 43" src="https://github.com/user-attachments/assets/dba048c4-0d2d-4e3b-b825-b85b76130b2f" />
+
 [รูปผลการทดลองที่ 2]
+
 <img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 39 48" src="https://github.com/user-attachments/assets/04815086-123d-4eb1-899d-0c5b69790dce" />
+
 [รูปผลการทดลองที่ 3]
+
 <img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 39 57" src="https://github.com/user-attachments/assets/29c6dc05-4eba-43a6-bc34-d8ea3f79aabf" />
+
 [รูปผลการทดลองที่ 4]
+
 <img width="412" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 40 11" src="https://github.com/user-attachments/assets/e5d21a86-fc77-44ba-8a01-c86dc123f8fa" />
 
 
