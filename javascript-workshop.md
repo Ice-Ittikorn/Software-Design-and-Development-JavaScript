@@ -667,9 +667,36 @@ console.log("เลขคู่:", evenNumbers); // [2, 4]
 
 ### บันทึกผลการทดลอง 2.4.2
 ```html
-[บันทึกโค้ด ที่นี่]
+1
+const calculateBMI = (weight, height) => weight / (height * height)
+
+console.calculateBMI(70,1.5);  
+
+2
+const greet = (name, age) => {
+    let text;
+
+    if (age < 13) {
+        text = `หวัดดี ${name}!`;
+    } else if (age < 20) {
+        text = `สวัสดีครับ ${name}!`;
+    } else {
+        text = `สวัสดีคุณ ${name}!`;
+    }
+    return text;
+};
+
+console.log(greet("สมชาย", 10)); 
+console.log(greet("สมจิตร", 70));
+console.log(greet("สมศักดิ์", 21));
+
+3
+const pas = (pass) => pass.length > 8;
+
+console.pas(123456); 
 ```
 [รูปผลการทดลองที่ 2.4.2]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 20 49 24" src="https://github.com/user-attachments/assets/9fc3d1b6-c5ae-4fa9-a1d7-a2d481f56d0c" />
 
 
 
