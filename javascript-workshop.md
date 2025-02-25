@@ -253,9 +253,63 @@ number /= 2;          // เท่ากับ number = number / 2
 
 ### บันทึกผลการทดลอง 2.2
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h2>คำนวณค่าเฉลี่ยของเลข 3 ตัว</h2>
+    <form id="averageForm">
+        <label for="num1">Num 1:</label>
+        <input type="number" id="num1" ><br>
+        <label for="num2">Num 2:</label>
+        <input type="number" id="num2" ><br>
+        <label for="num3">Num 3:</label>
+        <input type="number" id="num3" ><br>
+        <button type="button" onclick="cal()">หาค่าเฉลี่ย</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function cal() {
+            let num1 = parseFloat(document.getElementById('num1').value);
+            let num2 = parseFloat(document.getElementById('num2').value);
+            let num3 = parseFloat(document.getElementById('num3').value);
+
+            let average = (num1 + num2 + num3) / 3;
+
+            document.getElementById('result').innerText = "ค่าเฉลี่ยคือ: " + average;
+        }
+    </script>
+
+    <form id="senkr">
+        <label for="name">Name:</label>
+        <input type="text" id="name" ><br>
+        <label for="price">Price:</label>
+        <input type="number" id="price" ><br>
+        <button type="button" onclick="next()">หาVAT</button>
+    </form>
+    <p id="vat"></p>
+
+    <script>
+        function next() {
+            let name = document.getElementById('name').value;
+            let price = parseFloat(document.getElementById('price').value);
+
+            let vat = price + (price * 0.07);
+
+            document.getElementById('vat').innerText = name + " VAT: " + vat;
+        }
+    </script>
+
+</body>
+</html>
 ```
 [รูปผลการทดลองที่ 2.2]
+<img width="329" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 19 18 16" src="https://github.com/user-attachments/assets/7c1c4e3b-2015-44b0-8118-40bc0d005361" />
+
 
 ### 2.3 การควบคุมการทำงาน
 
