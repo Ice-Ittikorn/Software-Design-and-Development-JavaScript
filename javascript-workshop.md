@@ -588,9 +588,44 @@ process(function() {
 
 ### บันทึกผลการทดลอง 2.4.1
 ```html
-[บันทึกโค้ด ที่นี่]
+function calculateBMI(weight, height) {
+    let bmi = weight / (height * height);
+    return bmi;
+}
+
+let weight = 70;
+let height = 1.5; 
+
+let bmi = calculateBMI(weight, height);
+console.log("BMI : " + bmi.toFixed(2)); 
+
+2
+function greet(name, age) {
+    let text;
+
+    if (age < 13) {
+        text = `หวัดดี ${name}!`;
+    } else if (age < 20) {
+        text = `สวัสดีครับ ${name}!`;
+    } else  {
+        text = `สวัสดีคุณ ${name}!`;
+    }
+    return text;
+}
+
+console.log(greet("สมชาย", 10)); 
+console.log(greet("สมจิตร", 70));
+console.log(greet("สมศักริ์", 21));
+
+3
+function pas(pass) {
+    return passw.length > 8;
+}
+console.log(pas("12345678"));
+console.log(pas("123456789"));
 ```
 [รูปผลการทดลองที่ 2.4.1]
+![Uploading ภาพถ่ายหน้าจอ 2568-02-25 เวลา 20.35.12.png…]()
 
 
 
@@ -634,6 +669,7 @@ console.log("เลขคู่:", evenNumbers); // [2, 4]
 [บันทึกโค้ด ที่นี่]
 ```
 [รูปผลการทดลองที่ 2.4.2]
+
 
 
 ## การทดลองที่ 3 : การใช้ JavaScript กับ HTML และ CSS
