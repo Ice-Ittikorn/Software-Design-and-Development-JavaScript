@@ -440,9 +440,43 @@ for (let i = 1; i <= 5; i++) {
 
 ### บันทึกผลการทดลอง 2.3
 ```html
-[บันทึกโค้ด ที่นี่]
+1
+num = 10
+if (num % 2 == 0) {
+    console.log("เลขคู่");
+}else{
+    console.log("เลขตี่");
+}
+
+
+2
+for (let i = 1; i <= 13; i++) {
+    console.log("2 x " + i + " = " + (i * 2));
+}
+
+let con = 1;
+while (con <= 3) {   
+    console.log("3 x " + con + " = " + (con * 3));
+    con++;             
+}
+
+3
+for (let i = 10; i >= 1; i--) {
+    console.log(i);
+}
+
+4
+age = 20
+if (age > 25) {   
+    console.log("วัยผู้ใหญ่");
+} else if (age > 18) {    // OR (||)
+    console.log("วัยรุ่น");
+} else {
+    console.log("วัยเด็ก");
+}
 ```
 [รูปผลการทดลองที่ 2.3]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 20 12 04" src="https://github.com/user-attachments/assets/ef09c2da-b9ba-4002-8ce6-544e2dd37f21" />
 
 ### 2.4 Functions และ Arrow Functions
 
