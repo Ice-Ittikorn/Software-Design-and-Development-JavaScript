@@ -76,9 +76,55 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
    - มีปุ่มเมื่อคลิกแล้วจะแสดงข้อความที่กรอกในช่องข้อความ  (สามารถใช้ document.getElementById('id ของ textbox').value เพื่อดึงข้อมูลในช่อง)
 ### บันทึกผลการทดลอง 
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ทดลอง JavaScript</title>
+    <script>
+        function displayText() {
+            var inputText = document.getElementById('inputBox').value;
+            document.getElementById('displayArea').innerText = inputText;
+        }
+    </script>
+</head>
+<body>
+    <!-- Inline JavaScript -->
+    <button onclick="alert('อิทธิกร ทองสิมา')">ปุ่มที่ 1</button>
+
+    <!-- ทดสอบ Internal JavaScript -->
+    <button id="btn2">ปุ่มที่ 2</button>
+
+    <!-- ทดสอบ External JavaScript -->
+    <button id="btn3" onclick="hello3();">ปุ่มที่ 3</button>
+
+    <!-- Internal JavaScript -->
+    <script>
+        document.getElementById('btn2').onclick = function() {
+            alert('25 ก.พ.67');
+        };
+    </script>
+    <br>
+    <script src="script.js"></script>
+
+    <label for="inputBox">ป้อนข้อความ :</label>
+    <input type="text" id="inputBox" name="inputBox">
+    <button onclick="displayText()">แสดงข้อความ</button>
+    <p id="displayArea"></p>
+    
+</body>
+</html>
 ```
 [รูปผลการทดลองที่ 1]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 39 43" src="https://github.com/user-attachments/assets/952b94fd-d1b8-4480-9d47-b8a1badf22a2" />
+[รูปผลการทดลองที่ 2]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 39 48" src="https://github.com/user-attachments/assets/aa73ded3-241e-452a-8bd0-a172a817823c" />
+[รูปผลการทดลองที่ 3]
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 39 57" src="https://github.com/user-attachments/assets/79b4a8fb-0e96-4f9c-82d2-6bf086f83187" />
+[รูปผลการทดลองที่ 4]
+<img width="412" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 18 40 11" src="https://github.com/user-attachments/assets/5c302a1e-6006-4c88-a46b-60ce39407e2f" />
+
+
   
 ## การทดลองที่ 2: พื้นฐาน JavaScript
 ### 2.1 การประกาศตัวแปรและชนิดข้อมูล
