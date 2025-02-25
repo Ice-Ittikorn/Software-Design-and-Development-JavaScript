@@ -765,9 +765,43 @@ console.pas(123456);
 
 ### บันทึกผลการทดลอง 3.1
 ```html
-[บันทึกโค้ด ที่นี่]
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    น้ำหนัก<input type="number" id="wad">
+    ส่วนสูง<input type="number" id="hig">
+    <p id="output"></p>
+
+    <button onclick="calculateBMI()">คลิกที่นี่</button>
+    
+    <script>
+    const calculateBMI = () => {
+        const wad = document.getElementById('wad').value;
+        const hig = document.getElementById('hig').value;
+        const bmi = wad / (hig * hig);
+        let result = '';
+
+            if (bmi < 18) {
+                result = 'ผอม';
+            } else if (bmi >= 18 && bmi < 25) {
+                result = 'สมส่วน';
+            } else {
+                result = 'อ้วน';
+            }
+
+            document.getElementById('output').innerText = result;
+    }
+    </script>
+
+    </script>
+</body>
+</html>
 ```
 [รูปผลการทดลองที่ 3.1]
+<img width="467" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 21 40 54" src="https://github.com/user-attachments/assets/038596c1-6450-4374-b1ec-8a65374e1424" />
+
 
 ## การทดลองที่ 3.2 : การสร้างฟอร์มสำหรับจองห้องพัก
 การสร้างฟอร์มลงทะเบียนเพื่อรวบรวมข้อมูลที่จำเป็นสำหรับการจองห้องพัก
