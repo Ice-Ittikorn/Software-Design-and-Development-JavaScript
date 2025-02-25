@@ -625,7 +625,8 @@ console.log(pas("12345678"));
 console.log(pas("123456789"));
 ```
 [รูปผลการทดลองที่ 2.4.1]
-![Uploading ภาพถ่ายหน้าจอ 2568-02-25 เวลา 20.35.12.png…]()
+<img width="1440" alt="ภาพถ่ายหน้าจอ 2568-02-25 เวลา 20 35 12" src="https://github.com/user-attachments/assets/d139655c-649f-4994-b05b-352ea77a46e9" />
+
 
 
 
